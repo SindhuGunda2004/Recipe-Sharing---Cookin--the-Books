@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cookin' the Books</title>
+    <link href="mystyles.css" type="text/css" rel="stylesheet">
+    <!-- including javascript files -->
+    <script type="module" src="client.js"></script>
+    <script type="module" src="changeContent.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar and page heading -->
+    <div class="pagecontent" id="pagecontent">
+        <header class="navbar">
+            <p class="webname">Cookin' the Books</p>
+        </header>
+        <div class="pagehead">
+            Register
+        </div>
+        <!-- Form to add new user -->
+        <p class="pagebody">
+            First Name: <input type="text" id="fname"><br>
+            Last Name: <input type="text" id="lname"><br>
+            Email: <input type="email" id="email"><br>
+            Password: <input type="password" id="pass"><br>
+            Confirm Password: <input type="password" id="cpass"><br><br>
+            <button id="regpage" class="btn">Register</button><br>
+            Existing user? <u id="login-link">Click here to login</u>
+        </p>
+    </div>
+    <!-- website footer -->
+    <footer>
+        <div>
+            <ul>
+                <li class="insta"><a> <img src="./images/insta.png" height="45" width="45" alt="insta"> </a></li>
+                <li class="twitter"><a> <img src="./images/twitter.png" height="40" width="40" alt="twitter"> </a></li>
+                <li class="snapchat"><a> <img src="./images/snapchat.png" height="40" width="40" alt="snapchat"> </a>
+                </li>
+                <li class="fb"><a> <img src="./images/fb.png" height="35" width="35" alt="facebook"> </a></li>
+            </ul>
+            <div class="footname">
+                <h2 style="text-align: center;">Cookin' the Books © </h2>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

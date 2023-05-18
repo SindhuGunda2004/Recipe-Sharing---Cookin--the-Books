@@ -1,0 +1,455 @@
+/* importing fonts */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../public/sansfont/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('../public/sansfont/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* nav bar CSS */
+.webname {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #aacc00;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 7px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.nav {
+    width: 100%;
+    overflow: auto;
+    background-color: #aacc00;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    height: 55px;
+}
+
+/*since I used list, made the list style none so that the bullet points arent seen*/
+.nav ul {
+    padding: 0;
+    height: 10%;
+    list-style: none;
+}
+
+/*CSS adjusting the tabs to left and make them appear horizontally in a line */
+.nav li {
+    position: relative;
+    float: left;
+}
+
+.tabs {
+    width: 100%;
+    overflow: auto;
+    margin-top: 0%;
+}
+
+/*since I used list, made the list style none so that the bullet points arent seen*/
+.tabs ul {
+    padding: 0;
+    margin: 0 0 0 0px;
+    list-style: none;
+}
+
+/*CSS adjusting the tabs to left and make them appear horizontally in a line */
+.tabs li {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    float: left;
+}
+
+.tabs li button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2b9348;
+    color: white;
+    width: 720px;
+    border-radius: 2px;
+    font-size: large;
+    border-color: #081c15;
+}
+
+/* page body CSS */
+.pagehead {
+    margin-top: 3%;
+    text-align: center;
+    color: #007f5f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pagebody {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.pagebody input[type="text"],
+.pagebody input[type="email"],
+.pagebody input[type="password"] {
+    width: 20%;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagebody label {
+    text-align: right;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: large;
+    border: none;
+    color: white;
+    background-color: #008000;
+    padding: 6px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.logoutbtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #aacc00;
+    color: black;
+    font-size: 15px;
+    border: none;
+    margin-top: 0%;
+}
+
+/* search bar CSS */
+#searchbar {
+    padding: 10px;
+    margin-left: 29px;
+    font-size: 15px;
+    text-align: center;
+    width: 720px;
+    height: 20px;
+}
+
+.search-container {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.shead {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 45px;
+}
+
+.searchbtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #008000;
+    border: none;
+    border-radius: 5px;
+}
+
+.bannerimg {
+    border: 1px solid #081c15;
+    background-image: url("./images/banner3.jpg");
+    background-size: cover;
+    width: 1440px;
+    height: 400px;
+}
+
+/* recipe page CSS */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-container {
+    display: inline-block;
+    width: 23%;
+    margin: 2%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.recipe {
+    border: 2px solid #081c15;
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe img {
+    border: 1px solid #081c15;
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+}
+
+.viewbtn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    border: none;
+    color: white;
+    background-color: #008000;
+    padding: 6px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Individual recipe page CSS */
+.recipe-page {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.recipe-page-div {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #081c15;
+    max-width: 1000px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-page-div img {
+    border: 1.5px solid #081c15;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+.recipe-page-div h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.recipe-page-div p {
+    margin-bottom: 20px;
+}
+
+.recipe-page-div .closebtn {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add recipe page */
+.addRecipeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.addRecipeForm label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.addRecipeForm input[type="text"],
+.addRecipeForm input[type="file"],
+.addRecipeForm textarea {
+    width: 100%;
+    height: 50px;
+    /* adjust the value as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.addRecipeForm textarea {
+    width: 100%;
+    height: 150px;
+    /* adjust the value as needed */
+}
+
+.addRecipeForm button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addRecipeForm button:hover {
+    background-color: #45a049;
+}
+
+.addRecipeForm button:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+}
+
+/* Footer CSS */
+footer {
+    color: black;
+    font-family: 'breathingregular';
+    background-color: #aacc00;
+    margin-top: 8.5%;
+    margin-bottom: 0%;
+    height: 60px;
+    width: 100%;
+    overflow: auto;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0 0 0 0px;
+    list-style: none;
+}
+
+footer li {
+    padding-top: 10px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+}
+
+.footname {
+    padding: 0%;
+    margin-left: 630px;
+    font-size: 55px;
+    position: absolute;
+}
+
+.footname h2 {
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* like button CSS */
+.like-button {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: #d90429;
+    border: 2px solid #d8d8d8;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.like-button:hover {
+    transform: scale(1.1);
+}
+
+/* Edit profile CSS */
+#editProf {
+    background-color: #aacc00;
+    border: none;
+}
+
+.edit-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    border: 2px solid black;
+}
+
+.edit-popup p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-popup button.savebtn {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.edit-popup button.savebtn:hover {
+    background-color: darkgreen;
+}
+
+.edit-popup input[type="text"],
+.edit-popup input[type="email"],
+.edit-popup input[type="password"] {
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+/* Semi Transparent Background CSS */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
